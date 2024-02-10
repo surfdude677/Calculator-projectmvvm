@@ -1,0 +1,9 @@
+﻿<Application x:Class="לומדתמחשבון.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:לומדתמחשבון"
+             StartupUri="View/mainFrame.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

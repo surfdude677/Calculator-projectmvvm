@@ -1,0 +1,55 @@
+﻿<Window x:Class="לומדתמחשבון.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:לומדתמחשבון"
+        mc:Ignorable="d"
+        Title="Window2" Height="450" Width="800">
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+
+            <RowDefinition Height="2*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition Width ="2*"/>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Image x:Name="backi" Source="C:\Users\talmo\source\repos\לומדתמחשבון\לומדתמחשבון\bloodbornebackie.jpg" Stretch="UniformToFill" Grid.ColumnSpan="3" Grid.RowSpan="3"/>
+        <TextBlock Text="Name" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0" x:Name="FullName" />
+        <TextBlock Text="Your score is:" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1" x:Name="scoreBlock" Margin="0,2,-22,0" Grid.Row="0" RenderTransformOrigin="-6.035,-0.693" />
+        <TextBlock Text="" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" x:Name="SignBlock" Margin="170,2,0,0" Grid.Row="1" Height="45" Width="52" RenderTransformOrigin="-1.5,-0.728" />
+        <TextBlock Text="=" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" x:Name="equalBlock" Margin="374,4,0,0" Grid.Row="1" Height="45" Width="52" Grid.ColumnSpan="2" />
+        <Button Grid.Row="2" Content="check" x:Name="startCheck" FontSize="20" Click="checkAns" Grid.Column="2" Margin="66,32,0,0"/>
+
+
+
+        <Border BorderBrush="Black" BorderThickness="1" Margin="0,0,257,170" Grid.Row="1" Grid.Column="1" >
+            <TextBlock              Text="number"     x:Name="num1" FontSize="20" Margin="9,9,-9,-9"  />
+        </Border>
+
+        <TextBox x:Name="Ans" Grid.Row="1" Grid.Column="2" Text="" 
+                 FontSize="20" HorizontalAlignment="Center" Width="150" Margin="0,4,0,170"/>
+
+        <Border BorderBrush="Black" BorderThickness="1" Margin="216,2,41,170" Grid.Column="1" RenderTransformOrigin="0.5,0.5" Grid.Row="1" >
+            <Border.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Border.RenderTransform>
+            <TextBlock        Text="number"           x:Name="num2" FontSize="20" Margin="1,1,-1,-1"  />
+
+        </Border>
+        <MediaElement x:Name="music" Source="C:\Users\talmo\source\repos\לומדתמחשבון\לומדתמחשבון\Bloodborne Lyrics  Gehrman, the First Hunter.mp3" LoadedBehavior="Manual"/>
+        <Image x:Name="mic" Source="C:\Users\talmo\source\repos\לומדתמחשבון\לומדתמחשבון\elgigus.png" Grid.ColumnSpan="2" Margin="-23,128,377,89" Grid.Row="1" Grid.RowSpan="2"/>
+    </Grid>
+</Window>
